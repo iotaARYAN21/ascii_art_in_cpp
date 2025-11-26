@@ -54,4 +54,17 @@ the height and width of the image . Then it can be used to print the ascii art
 
 # TODO
 while resizing how to make sure the parts of the main content not get cropped.
+    possible solution: 
+        - can think of removing the background from the image and then working on it  but then the edges of the art is not that good . also stb_image not supports          bg_remover . I will have to use then OpenCV
+
+# Day 4
+Added color to the symbols in the terminal using ANSII escape sequences . Used the extended 256 color variant as all the values in the image[] lie between 0 to 255 . Now the ascii art main part is looking more distinctive from the rest of the chars.
+Syntax:
+    \033[38;5;<color_code>m
+
+eg
+    echo -e "\033[38;5;196mThis is bright RED (256-color)\033[0m"
+    echo -e "\033[38;5;82mThis is neon GREEN\033[0m"
+
+
 

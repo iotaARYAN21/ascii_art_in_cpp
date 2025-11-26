@@ -71,7 +71,13 @@ int main() {
     // cout<<"Printing the pixel values\n";
     int cnt=0;
     for (int i = 0; i < size; i++) {
-        cout<<symbols[(int)resized_img[i]];
+        string s = "\033[38;5;";
+        s+=to_string((int)resized_img[i]);
+        s+="m";
+        s+=symbols[(int)resized_img[i]];
+        s+="\033[0m";
+        cout<<s;
+        // cout<<symbols[(int)resized_img[i]];
         cnt++;
         if(cnt==new_w*3){
             cout<<endl;
@@ -87,7 +93,7 @@ int main() {
     } else {
         cout << "Saved output.png" << endl;
     }
-
+    
     stbi_image_free(img);
     return 0;
 }
