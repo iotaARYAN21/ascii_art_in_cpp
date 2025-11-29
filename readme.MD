@@ -146,7 +146,11 @@ depending upon the different angle value I am deciding the direction of the edge
 Ultimately I am returning the gradient matrix and the angle matrix and for each brightness value I am checking whether to print an edge or not
 
 
-        
+
+
+# Output GIF
+![Demo Output](demo.gif)
+
 
 
 

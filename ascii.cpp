@@ -63,7 +63,7 @@ int main() {
 
     // calculating grayscale which will give brightness value for each pixel using which i wil decide the ascii char and color according to that brightness 
     int height,width,channels;
-    unsigned char* img = stbi_load("aryan.png",&width,&height,&channels,3);
+    unsigned char* img = stbi_load("image.png",&width,&height,&channels,3);
     channels=3;
     int new_height=height/4;
     int new_width = width/4;
