@@ -1,9 +1,9 @@
 for compiling with cImg
-g++ main.cpp -o app -O2 -lX11
+    g++ main.cpp -o app -O2 -lX11
 
-OR
+    OR
 
-g++ ascii.cpp -o app -O2
+    g++ ascii.cpp -o app -O2
 
 
 
@@ -75,7 +75,7 @@ We are concerned about how light and dark a pixel is so we are using brightness 
 if brightness is low  => use darker color and a particular symbol 
 elif brightness is high => use brighter color 
 
-# Day 6
+# Day 6 - 7
 To better represent the image I converted the rgb values to grayscale brightness (as now aiming to depict the bright and low part of the image with differenet colors and ascii chars) . For this first I converted the rgb values (img[i],img[i+1],img[i+2]) to brightness using approximate formula
 
     brightness = (r+g+b)/3;
