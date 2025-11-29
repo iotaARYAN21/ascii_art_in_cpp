@@ -148,9 +148,5 @@ Ultimately I am returning the gradient matrix and the angle matrix and for each 
 
 
 
-# Output GIF
-![Demo Output](demo.gif)
-
-
 
 
